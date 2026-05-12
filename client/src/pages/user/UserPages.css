@@ -1,0 +1,18 @@
+.user-page{padding-top:calc(var(--navbar-height) + 32px);min-height:100vh;padding-bottom:48px}
+.profile-card{padding:36px;text-align:center;margin-bottom:20px}
+.profile-avatar{width:72px;height:72px;background:var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.8rem;font-weight:700;color:#fff;margin:0 auto 14px}
+.profile-card h2{font-size:1.4rem;margin-bottom:4px}
+.profile-email{color:var(--text-secondary);margin-bottom:10px}
+.profile-form{padding:28px}.profile-form h3{font-size:1.1rem;margin-bottom:18px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px}
+.profile-message{padding:10px;background:rgba(22,163,74,.08);border:1px solid rgba(22,163,74,.2);border-radius:var(--radius-md);color:var(--accent-green);font-size:.85rem;margin-bottom:14px;text-align:center}
+.orders-list{display:flex;flex-direction:column;gap:14px}
+.order-card{padding:20px}
+.order-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.order-id{font-weight:700;font-size:.9rem;margin-right:10px}
+.order-date{color:var(--text-muted);font-size:.8rem}
+.order-items-preview{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.order-item-tag{padding:3px 8px;background:var(--bg-tertiary);border-radius:var(--radius-full);font-size:.76rem;color:var(--text-secondary)}
+.order-footer{display:flex;justify-content:space-between;align-items:center}
+.order-total{font-weight:700;font-size:1.05rem;color:var(--text-primary)}
+@media(max-width:768px){.form-grid{grid-template-columns:1fr}}

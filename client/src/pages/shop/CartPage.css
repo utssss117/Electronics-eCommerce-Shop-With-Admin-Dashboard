@@ -1,0 +1,21 @@
+.cart-page{padding-top:calc(var(--navbar-height) + 32px);min-height:100vh;padding-bottom:48px}
+.cart-count{color:var(--text-muted);font-weight:400;font-size:1.1rem}
+.cart-layout{display:grid;grid-template-columns:1fr 360px;gap:24px;margin-top:24px}
+.cart-items{display:flex;flex-direction:column;gap:12px}
+.cart-item{display:flex;align-items:center;gap:16px;padding:16px}
+.cart-item-image{width:90px;height:90px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:var(--bg-tertiary);border-radius:var(--radius-md);overflow:hidden}
+.cart-item-image img{max-width:72px;max-height:72px;object-fit:contain}
+.cart-item-info{flex:1;min-width:0}
+.cart-item-name{font-size:.9rem;font-weight:600;margin-bottom:3px;transition:color var(--transition-fast)}.cart-item-name:hover{color:var(--accent)}
+.cart-item-price{color:var(--text-secondary);font-size:.84rem}
+.cart-item-actions{display:flex;align-items:center;gap:16px}
+.cart-item-total{font-weight:700;font-size:1rem;min-width:80px;text-align:right;color:var(--text-primary)}
+.remove-btn{width:34px;height:34px;display:flex;align-items:center;justify-content:center;background:none;border:none;color:var(--text-muted);cursor:pointer;border-radius:var(--radius-sm);transition:all var(--transition-fast)}.remove-btn:hover{color:var(--accent-red);background:rgba(228,37,41,.08)}
+.cart-summary{padding:24px;position:sticky;top:calc(var(--navbar-height) + 16px);height:fit-content}
+.cart-summary h3{font-size:1.1rem;margin-bottom:16px}
+.summary-row{display:flex;justify-content:space-between;padding:8px 0;font-size:.88rem;color:var(--text-secondary)}
+.summary-row.total{color:var(--text-primary);font-weight:700;font-size:1.05rem}
+.summary-divider{height:1px;background:var(--border-color);margin:6px 0}
+.checkout-btn{width:100%;margin-top:16px}
+.continue-shopping{display:block;text-align:center;color:var(--accent);font-size:.84rem;font-weight:600;margin-top:10px}
+@media(max-width:768px){.cart-layout{grid-template-columns:1fr}.cart-item{flex-wrap:wrap}.cart-item-actions{width:100%;justify-content:space-between}}
